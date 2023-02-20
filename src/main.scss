@@ -1,3 +1,251 @@
-html {
-  background-color: aqua;
+:root {
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  //align-items: center;
+  padding: 0px;
+
+  position: relative;
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-line {
+  height: 50px;
+  background-color: Gray;
+}
+
+.top-line__menu {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 447px;
+  margin: auto;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  background-color: #66c05d;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+  /* Accent */
+  color: #66c05d;
+}
+
+.second-line {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__header-left {
+    display: flex;
+  }
+
+  &__header-right {
+    display: flex;
+  }
+
+  &__button {
+    border: solid 2px #66c05d;
+    padding: 1rem 2rem;
+  }
+
+  &__main-menu {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 675px;
+    border-top: 1px solid #efefef;
+  }
+}
+
+.sale {
+  height: 604px;
+  background: url(./images/rectangle2.png), #000000;
+
+  &__group {
+    max-width: 308px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+
+    color: #ffffff;
+
+    white-space: nowrap;
+  }
+
+  &__slogan {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    color: #ffffff;
+  }
+}
+
+.bgc {
+  padding: 5rem 5rem 8.25rem;
+  background: #EFEFEF;
+}
+
+.goods {
+  margin-bottom: 6.25rem;
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    color: #000000;
+  }
+
+  &__products {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 255px;
+  height: 363px;
+  padding: 0 1.85rem;
+  box-sizing: border-box;
+
+  &__img {
+    width: 125px;
+    height: 166px;
+    background: url(./images/rectangle4.jpg), #c4c4c4;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__button {
+    background: #66c05d;
+    border-radius: 30px;
+    padding: 0.6rem 2.55rem;
+
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+
+    //text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #ffffff;
+  }
+}
+
+.offer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+  width: 33.75rem;
+  height: 13.25rem;
+  background: #66c05d;
+  padding: 1rem 2.8125rem;
+  box-sizing: border-box;
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+}
+
+.our-shops {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background: #66c05d;
+  color: #ffffff;
+  width: 33.75rem;
+  height: 13.25rem;
+  padding: 1rem 2.8125rem;
+  box-sizing: border-box;
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__button {
+    background: #66c05d;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+
+    text-align: center;
+    padding: 0.6rem 2.55rem;
+  }
+}
+
+.footer {
+  border-top: 1px solid #EFEFEF;
+
+  &__bottom {
+    display: flex;
+  }
 }

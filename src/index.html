@@ -3,24 +3,172 @@
   <head>
     <meta charset="utf-8" />
     <meta name="keywords" content="Макет, Beauty" />
-    <meta
-      name="description"
-      content="Макет Beauty"
-    />
+    <meta name="description" content="Макет Beauty" />
     <title>Макет Beauty</title>
   </head>
+
   <body>
     <header>
-      <h1>Макет Beauty</h1>
+      <div class="top-line">
+        <div class="top-line__menu">
+          <div><a href="/">Контакты</a></div>
+          <div><a href="/">Оплата</a></div>
+          <div><a href="/">Отзывы</a></div>
+          <div><a href="/">Вопрос - ответ</a></div>
+          <div><a href="/">Контакты</a></div>
+        </div>
+      </div>
     </header>
     <main>
-      <nav>Навигация</nav>
-      <section>
-        <p>
-          Макет Beauty
-        </p>
-      </section>
+      <div class="second-line">
+        <div class="container">
+          <div class="second-line__header">
+            <div class="second-line__header-left">
+              <div class="logo">B</div>
+              <div class="logo-text">BEAUTY</div>
+            </div>
+            <div class="second-line__header-right">
+              <div class="phone">8 (812) 123-45-67</div>
+              <div class="second-line__button">
+                <button>Обратный звонок</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="second-line__main-menu">
+          <div>Парикмахерская</div>
+          <div>Барбершоп</div>
+          <div>Маникюр</div>
+          <div>Педикюр</div>
+          <div>Массаж</div>
+          <div>Мебель</div>
+        </nav>
+      </div>
+      <div class="sale">
+        <div class="container">
+          <div class="sale__group">
+            <div class="sale__title">Супер кресло</div>
+            <div class="sale__slogan">
+              Текст акции всегда отражает суть, а не просто болтовню, поэтому
+              внимательнее
+            </div>
+            <div class="second-line__button">Подробнее</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- bgc -->
+
+      <div class="bgc">
+        <div class="container">
+          <!-- goods -->
+          <div class="goods">
+            <div class="goods__title">Специальные предложения</div>
+            <div class="goods__products">
+              <div class="card">
+                <div class="card__img"></div>
+                <div class="card__text">
+                  Парикмахерское кресло «Норм» гидравлическое
+                </div>
+                <div class="card__price">9 900 ₽</div>
+                <div class="card__button">Купить</div>
+              </div>
+              <div class="card">
+                <div class="card__img"></div>
+                <div class="card__text">
+                  Парикмахерское кресло «Норм» гидравлическое
+                </div>
+                <div class="card__price">9 900 ₽</div>
+                <div class="card__button">Купить</div>
+              </div>
+              <div class="card">
+                <div class="card__img"></div>
+                <div class="card__text">
+                  Парикмахерское кресло «Норм» гидравлическое
+                </div>
+                <div class="card__price">9 900 ₽</div>
+                <div class="card__button">Купить</div>
+              </div>
+              <div class="card">
+                <div class="card__img"></div>
+                <div class="card__text">
+                  Парикмахерское кресло «Норм» гидравлическое
+                </div>
+                <div class="card__price">9 900 ₽</div>
+                <div class="card__button">Купить</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- goods -->
+          <div class="offer">
+            <div class="subscribe">
+              <div class="subscribe__content">
+                <div class="subscribe__title">Получайте бонусы и подарки</div>
+                <div class="subscribe__text">
+                  Каждый месяц разыгрываем 10 000 рублей для наших клиентов
+                </div>
+                <input type="email" placeholder="Введите e-mail" />
+              </div>
+              <div class="">
+                <div class="subscribe__img">
+                  <svg
+                    width="140"
+                    height="140"
+                    viewBox="0 0 140 140"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_24_63)">
+                      <path
+                        d="M122.909 16.7288H17.1198C7.67639 16.7288 0 24.4052 0 33.8486V106.151C0 115.595 7.67639 123.271 17.1198 123.271H122.88C132.324 123.271 140 115.595 140 106.151V33.8775C140.029 24.4341 132.353 16.7288 122.909 16.7288ZM132.208 106.151C132.208 111.279 128.036 115.45 122.909 115.45H17.1198C11.9926 115.45 7.82123 111.279 7.82123 106.151V33.8775C7.82123 28.7503 11.9926 24.579 17.1198 24.579H122.88C128.007 24.579 132.179 28.7503 132.179 33.8775V106.151H132.208Z"
+                        fill="white"
+                        fill-opacity="0.4"
+                      />
+                      <path
+                        d="M88.293 69.102L122.533 38.3965C124.126 36.9481 124.271 34.4858 122.822 32.8637C121.374 31.2704 118.912 31.1256 117.289 32.574L70.0724 74.9535L60.8608 66.7267C60.8318 66.6977 60.8028 66.6688 60.8028 66.6398C60.6 66.437 60.3973 66.2632 60.1655 66.0894L22.6816 32.545C21.0594 31.0966 18.5972 31.2415 17.1488 32.8637C15.7004 34.4858 15.8452 36.9481 17.4674 38.3965L52.1126 69.3627L17.6123 101.662C16.048 103.139 15.9611 105.601 17.4385 107.194C18.2206 108.005 19.2634 108.44 20.3062 108.44C21.2622 108.44 22.2181 108.092 22.9712 107.397L57.993 74.6348L67.4943 83.1223C68.2475 83.7886 69.1744 84.1072 70.1014 84.1072C71.0284 84.1072 71.9843 83.7596 72.7085 83.0933L82.4705 74.3451L117.289 107.426C118.043 108.15 119.028 108.498 119.983 108.498C121.026 108.498 122.04 108.092 122.822 107.281C124.3 105.717 124.242 103.226 122.677 101.748L88.293 69.102Z"
+                        fill="white"
+                        fill-opacity="0.4"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_24_63">
+                        <rect width="140" height="140" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="our-shops">
+              <div class="our-shops__title">Заходите к нам</div>
+              <div class="our-shops__text">
+                Более 300 магазинов по всей России
+              </div>
+              <div class="our-shops__button">Карта магазинов</div>
+            </div>
+          </div>
+          <!-- goods -->
+        </div>
+      </div>
+      <!-- bgc end -->
     </main>
-    <footer>Подвал сайта</footer>
+    <footer class="footer">
+      <div class="footer__line">
+        <div class=""></div>
+        <div class="">198555, Невский пр. 140, офис 140</div>
+        <div class="">8 (812) 123-45-67</div>
+        <div class="second-line__button">Обратный звонок</div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="copyright">
+            Лучший магазин (с) 2019 Все права защищены. Интернет-магазин
+            оборудования для салонов красоты
+          </div>
+          <div class="policy">Политика конфиденциальности</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
