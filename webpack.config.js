@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: path.join(__dirname, "src", "index.js"),
   output: {
-    path: path.join(__dirname, "dist"),
+    path: path.join(__dirname, "docs"),
     filename: "index.[contenthash].js",
     assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
   },
@@ -47,7 +47,7 @@ module.exports = {
     new FileManagerPlugin({
       events: {
         onStart: {
-          delete: ["dist"],
+          delete: ["docs"],
         },
       },
     }),
