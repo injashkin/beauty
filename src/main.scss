@@ -1,4 +1,7 @@
 :root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --light-gray-color: #efefef;
 }
 
 body {
@@ -10,7 +13,7 @@ body {
   position: relative;
   box-sizing: border-box;
 
-  background: #ffffff;
+  background: var(--white-color);
 
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -21,7 +24,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: var(--black-color);
 
   &:hover {
     opacity: 0.5;
@@ -88,7 +91,7 @@ input {
     width: 100%;
     height: 2px;
 
-    background-color: #000000;
+    background-color: var(--black-color);
     transition-duration: 0.25s;
   }
 
@@ -135,7 +138,7 @@ input {
 
     text-align: center;
 
-    background-color: #ffffff;
+    background-color: var(--black-color);
     box-shadow: 1px 0 6px rgba(0, 0, 0, 0.2);
 
     transition-duration: 0.25s;
@@ -147,7 +150,7 @@ input {
 
   .menu__item {
     padding: 0.75em 1em;
-    color: #000000;
+    color: var(--black-color);
 
     transition-duration: 0.25s;
 
@@ -168,7 +171,7 @@ input {
   display: flex;
   justify-content: center;
   height: 50px;
-  background-color: #efefef;
+  background-color: var(--light-gray-color);
 
   &__menu {
     display: flex;
@@ -220,8 +223,8 @@ input {
 
   &_accent {
     background: #66c05d;
-    border: 2px solid #ffffff;
-    color: #ffffff;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
   }
 }
 
@@ -229,7 +232,7 @@ input {
   position: relative;
   top: 6.25rem;
   width: 99.7%;
-  border: 1px solid #efefef;
+  border: 1px solid var(--light-gray-color);
 
   @media (max-width: 800px) {
     display: none;
@@ -338,7 +341,7 @@ input {
     font-weight: 700;
     font-size: 48px;
     line-height: 56px;
-    color: #ffffff;
+    color: var(--white-color);
     white-space: nowrap;
     margin-bottom: 3.125rem;
 
@@ -352,14 +355,14 @@ input {
     font-size: 14px;
     line-height: 20px;
     /* or 143% */
-    color: #ffffff;
+    color: var(--white-color);
     margin-bottom: 3.125rem;
   }
 }
 
 .bgc {
   padding: 5rem 0 8.25rem;
-  background: #efefef;
+  background: var(--light-gray-color);
 }
 
 .goods {
@@ -368,7 +371,7 @@ input {
     font-size: 24px;
     line-height: 28px;
     /* identical to box height */
-    color: #000000;
+    color: var(--black-color);
 
     @media (max-width: 1150px) {
       text-align: center;
@@ -410,7 +413,7 @@ input {
   height: 363px;
   padding: 1.5625rem 1.85rem;
   box-sizing: border-box;
-  background: #ffffff;
+  background: var(--white-color);
 
   &:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -432,7 +435,7 @@ input {
     line-height: 25px;
     text-align: center;
     letter-spacing: 0.05em;
-    color: #000000;
+    color: var(--black-color);
   }
 
   &__button {
@@ -461,7 +464,7 @@ input {
     background: #66c05d;
     padding: 2.1875rem 2.5rem;
     box-sizing: border-box;
-    color: #ffffff;
+    color: var(--white-color);
 
     &__img > svg {
       @media (max-width: 525px) {
@@ -504,7 +507,7 @@ input {
   }
 
   &__input {
-    background: #ffffff;
+    background: var(--white-color);
     border-radius: 30px;
     width: 14.0625rem;
     height: 2.1875rem;
@@ -529,7 +532,7 @@ input {
 }
 
 .footer {
-  border-top: 1px solid #efefef;
+  border-top: 1px solid var(--light-gray-color);
 
   &__line {
     display: flex;
@@ -558,7 +561,7 @@ input {
   }
 
   &__bottom {
-    background: #efefef;
+    background: var(--light-gray-color);
   }
 
   &__bottom-content {
